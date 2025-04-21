@@ -1,15 +1,14 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         int initialScore = 200;
         int replenishment = 1_500;
         int bonus;
+        boolean isSum = replenishment > 1_000;
 
-        boolean x = replenishment > 1_000;
-
-        if (x) {
+        if (isSum) {
             bonus = replenishment / 100;
         } else {
             bonus = 0;
